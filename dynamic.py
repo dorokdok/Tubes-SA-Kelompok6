@@ -1,8 +1,7 @@
 perbandingan = 0
 def LISwithDP(a):
     global perbandingan
-    dmp = [0] * len(a)
-    dmp[0] = 1
+    dmp = [1] * len(a)
     for i in range(1,len(a)):
         for j in range(i):
             if a[j] < a[i]:
