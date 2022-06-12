@@ -1,4 +1,6 @@
+from time import time
 perbandingan = 0
+
 def LISwithDP(a):
     global perbandingan
     dmp = [1] * len(a)
@@ -11,11 +13,11 @@ def LISwithDP(a):
 
 def main():
     global perbandingan
-    list = []
-    while (inputan != -1):
-        inputan = int(input("Masukkan angka yang akan dimasukkan kedalam list (berhenti = -1): "))
-        list.append(inputan)
-    print("Maksimum LIS:", LISwithDP(list))
+    n = int(input("Banyakan masukkan angka yang akan dimasukkan: "))
+    List = list(map(int,input("Masukkan Angkanya: ").strip().split()))[:n]
+    Stime = time()
+    print("Maksimum LIS:", LISwithDP(List))
     print("Total Perbandingan:",perbandingan)
+    print("--- %s\tseconds ---" % '{0:.16f}'.format(time() - Stime))
 
 main()
