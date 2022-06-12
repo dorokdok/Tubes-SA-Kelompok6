@@ -21,7 +21,10 @@ def LIS(a):
 
 def main():
     global perbandingan
-    list = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
+    list = []
+    while (inputan != -1):
+        inputan = int(input("Masukkan angka yang akan dimasukkan kedalam list (berhenti = -1): "))
+        list.append(inputan)
     print("Maksimum LIS:", LIS(list))
     print("Total Perbandingan:",perbandingan)
 
