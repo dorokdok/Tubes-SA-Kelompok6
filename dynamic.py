@@ -13,6 +13,7 @@ def LISwithDP(a):
 
 def main():
     global perbandingan
+    print("==================Dynamic Programming==================\n")
     n = int(input("Banyakan masukkan angka yang akan dimasukkan: "))
     List = list(map(int,input("Masukkan Angkanya: ").strip().split()))[:n]
     Stime = time()

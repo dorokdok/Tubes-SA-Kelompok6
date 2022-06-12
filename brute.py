@@ -22,7 +22,7 @@ def LIS(a):
 
 def main():
     global perbandingan
-    print("==================BRUTE FORCE========================\n")
+    print("==================BRUTE FORCE==================\n")
     n = int(input("Banyakan masukkan angka yang akan dimasukkan: "))
     List = list(map(int,input("Masukkan Angkanya :").strip().split()))[:n] 
     Stime = time()
